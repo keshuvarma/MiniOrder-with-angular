@@ -1,0 +1,7 @@
+<h1>My orders</h1>
+
+<li *ngFor="let item of items"> 
+<a [routerLink] ="['/item',item.orderNo]">
+     Order No {{item.orderNo}}
+    </a>
+</li>
